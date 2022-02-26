@@ -1,0 +1,21 @@
+.home-body{
+    display: flex;
+    justify-content: space-between;
+    height:calc(100vh - 75px) ;
+    /* border: 1px solid black; */
+    max-width: 1000px;
+    margin: auto;
+}
+.home-right{
+    flex: 0.75;
+    padding-top: 10px;
+    /* border: 1px solid black; */
+
+}
+.home-left{
+    flex: 0.2;
+    border-right: 1px solid rgb(194, 187, 187);
+    padding-top: 10px;
+    /* border: 1px solid black; */
+
+}

@@ -1,0 +1,24 @@
+.user{
+    /* border: 1px solid black; */
+    display: flex;
+    padding:10px;
+    align-items: center;
+    /* margin: 10px 0px; */
+    border-bottom: 1px solid rgb(194, 187, 187);
+    cursor: pointer;
+
+}
+.userImg{
+    /* border: 1px solid black; */
+    margin-right: 10px;
+}
+.user_profileimg{
+    width: 40px;
+    display: flex;
+    border-radius: 50%;
+
+}
+.username{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700; 
+}

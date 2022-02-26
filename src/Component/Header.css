@@ -1,0 +1,65 @@
+.header{
+    padding: 10px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 6px 0px #e5c0cd;
+    -webkit-box-shadow: 0px 0px 6px 0px #f1bed1;
+    -moz-box-shadow: 0px 0px 6px 0px #e6aec2;
+    background-color: #fde7ef;
+}
+
+.header-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header-left{
+    font-family: 'Rubik', sans-serif;
+}
+
+.header-logo{
+    width: fit-content;
+    border:1px solid #fc85ae;
+}
+
+.header-right>p{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+}
+
+.B-logo{
+   background-color: #fc85ae;
+   color: white;
+   padding: 0 5px;
+}
+.R-logo{
+   color:#fc85ae;
+   padding: 0 2px;
+}
+
+
+.header-right-icons{
+    cursor: pointer;
+    position: relative;
+}
+.header-right-popup{
+    display: none;
+    position: absolute;
+    top: 35px;
+    right: 0px;
+    border-radius: 5px;
+    padding: 2px 10px;
+    background-color:#ffc5d9 ;
+    color: BLACK;
+    font-size: 15px;
+    box-shadow: 0px 0px 5px 0px #fc85ae;
+    -webkit-box-shadow: 0px 0px 5px 0px #fc85ae;
+    -moz-box-shadow: 0px 0px 5px 0px #fc85af;
+}
+.header-right-icons:hover .header-right-popup{
+    display: block;
+}
+

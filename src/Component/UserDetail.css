@@ -1,0 +1,39 @@
+
+.userdetails-wrap{
+    margin: 10px;
+}
+.user-detail{
+    font-family: 'Rubik', sans-serif;
+}
+
+.userInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:30px;
+    padding: 10px 0;
+}
+.userdetail-img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+.userdetail-info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 400px;
+}
+.userdetail-info>p{
+   margin-top: 10px;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:calc(100vh - 100px);
+}
+.details>h2{
+    color: gray;
+}

@@ -1,25 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './Screen/Home';
+import Login from './Screen/Login';
+import UserDetail from "./Component/UserDetail"
+import { BrowserRouter as Router, Routes, Route, Redirect } from "react-router-dom";
+import { useDispatch, useSelector } from 'react-redux';
+
 
 function App() {
+
+  const auth = useSelector(state => state.auth)
+  const { EcommUser } = auth;
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Routes>
+          <Route exact path='/' element={EcommUser ? <Home /> : <Login />} />
+          <Route exact path='/login' element={!EcommUser ? <Login /> : <Home />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
 
 export default App;
+
+{/* <Route exact path='/detail/:userName' element={<UserDetail />} /> */}
